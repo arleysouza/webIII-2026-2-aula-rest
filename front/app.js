@@ -1,19 +1,19 @@
 const examples = [
   ["Alunos · listar", "GET", "/api/students"],
-  ["Alunos · buscar", "GET", "/api/students/2026001"],
+  ["Alunos · buscar", "GET", "/api/students/258001"],
   [
     "Alunos · criar",
     "POST",
     "/api/students",
-    { ra: 2026099, name: "Estudante de teste" },
+    { ra: 258099, name: "Estudante de teste" },
   ],
   [
     "Alunos · atualizar",
     "PATCH",
-    "/api/students/2026099",
+    "/api/students/258099",
     { name: "Estudante atualizado" },
   ],
-  ["Alunos · excluir", "DELETE", "/api/students/2026099"],
+  ["Alunos · excluir", "DELETE", "/api/students/258099"],
   ["Disciplinas · listar", "GET", "/api/courses"],
   ["Disciplinas · buscar", "GET", "/api/courses/13"],
   [
@@ -30,17 +30,17 @@ const examples = [
   ],
   ["Disciplinas · excluir", "DELETE", "/api/courses/40"],
   ["Matrículas · listar", "GET", "/api/enrollments"],
-  ["Matrículas · buscar", "GET", "/api/enrollments/student/2026001/course/1"],
+  ["Matrículas · buscar", "GET", "/api/enrollments/student/258001/course/1"],
   [
     "Matrículas · criar",
     "POST",
     "/api/enrollments",
-    { studentRa: 2026099, courseId: 13 },
+    { studentRa: 258099, courseId: 13 },
   ],
   [
     "Matrículas · excluir",
     "DELETE",
-    "/api/enrollments/student/2026099/course/13",
+    "/api/enrollments/student/258099/course/13",
   ],
   [
     "Erro 400 · dados inválidos",
@@ -53,7 +53,7 @@ const examples = [
     "Erro 409 · matrícula já existente no seed",
     "POST",
     "/api/enrollments",
-    { studentRa: 2026001, courseId: 1 },
+    { studentRa: 258001, courseId: 1 },
   ],
 ];
 const $ = (id) => document.getElementById(id);
