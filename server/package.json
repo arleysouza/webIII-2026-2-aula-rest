@@ -2,7 +2,7 @@
   "name": "app-exemplo",
   "version": "1.0.0",
   "private": true,
-  "description": "Aplicação servidora usando drizzle e NestJS para CRUD no PostgreSQL.",
+  "description": "API REST para gerenciamento de alunos, cursos e matrículas, desenvolvida com NestJS, Drizzle ORM e PostgreSQL.",
   "scripts": {
     "build": "nest build",
     "start": "nest start",
